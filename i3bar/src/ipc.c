@@ -163,7 +163,7 @@ static void got_mode_event(char *event) {
 static void got_windowtitle_event(char *event) {
     DLOG("Got windowtitle event!\n");
 
-    parse_windowtitle_str(event);
+    parse_windowtitle_json(event);
     draw_bars(false);
 }
 
